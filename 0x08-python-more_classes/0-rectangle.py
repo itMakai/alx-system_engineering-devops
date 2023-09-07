@@ -4,7 +4,6 @@
 """
 
 
-
 class Rectangle:
-    """Defines a rectangle"""
+    """Defines a reactangle"""
     pass
