@@ -1,0 +1,126 @@
+[34m
+* Datadog Agent 7 install script v1.33.0
+[0m
+/usr/bin/systemctl
+[34m
+* Installing apt-transport-https, curl and gnupg
+[0m
+Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:2 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
+Get:3 http://downloads.metasploit.com/data/releases/metasploit-framework/apt lucid InRelease [3,956 B]
+Get:4 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
+Get:5 https://repo.protonvpn.com/debian stable InRelease [2,519 B]
+Get:6 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]
+Hit:7 http://us.archive.ubuntu.com/ubuntu jammy InRelease
+Get:8 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,101 B]
+Hit:9 https://download.virtualbox.org/virtualbox/debian jammy InRelease
+Get:10 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [10.2 kB]
+Get:12 https://packages.microsoft.com/repos/code stable/main arm64 Packages [17.7 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:14 https://repo.protonvpn.com/debian stable/main all Packages [122 kB]
+Get:15 https://packages.microsoft.com/repos/code stable/main amd64 Packages [17.5 kB]
+Get:16 https://packages.microsoft.com/repos/code stable/main armhf Packages [17.7 kB]
+Get:17 http://downloads.metasploit.com/data/releases/metasploit-framework/apt lucid/main i386 Packages [418 B]
+Get:18 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [522 kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:20 http://downloads.metasploit.com/data/releases/metasploit-framework/apt lucid/main amd64 Packages [419 B]
+Hit:21 https://ppa.launchpadcontent.net/linuxuprising/java/ubuntu jammy InRelease
+Ign:11 https://dl.bintray.com/etcher/debian stable InRelease
+Hit:22 https://ppa.launchpadcontent.net/ondrej/php/ubuntu jammy InRelease
+Get:24 http://us.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [681 kB]
+Get:25 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1,726 kB]
+Err:23 https://dl.bintray.com/etcher/debian stable Release
+  404  Not Found [IP: 18.214.194.113 443]
+Get:26 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1,946 kB]
+Get:27 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [285 kB]
+Get:28 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [13.1 kB]
+Get:29 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2,247 kB]
+Get:30 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [387 kB]
+Get:31 http://us.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [343 kB]
+Get:32 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [889 kB]
+Get:33 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [17.8 kB]
+Get:34 http://us.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [2,322 kB]
+Get:35 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [620 kB]
+Get:36 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [174 kB]
+Get:37 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [19.0 kB]
+Get:38 http://us.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [400 kB]
+Get:39 http://us.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [725 kB]
+Get:40 http://us.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1,111 kB]
+Get:41 http://us.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [259 kB]
+Get:42 http://us.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [25.9 kB]
+Get:43 http://us.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.8 kB]
+Get:44 http://us.archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [17.2 kB]
+Get:45 http://us.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:46 http://us.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [672 B]
+Reading package lists...
+W: https://download.virtualbox.org/virtualbox/debian/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+E: The repository 'https://deb.etcher.io stable Release' does not have a Release file.
+[31m'apt-get update' failed, the script will not install the latest version of apt-transport-https.[0m
+Reading package lists...
+Building dependency tree...
+Reading state information...
+gnupg is already the newest version (2.2.27-3ubuntu2.1).
+gnupg set to manually installed.
+The following NEW packages will be installed:
+  apt-transport-https
+The following packages will be upgraded:
+  curl libcurl4
+2 upgraded, 1 newly installed, 0 to remove and 91 not upgraded.
+Need to get 291 kB/485 kB of archives.
+After this operation, 170 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 apt-transport-https all 2.4.12 [1,510 B]
+Get:2 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.17 [290 kB]
+Fetched 291 kB in 3s (101 kB/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 305389 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_2.4.12_all.deb ...
+Unpacking apt-transport-https (2.4.12) ...
+Preparing to unpack .../curl_7.81.0-1ubuntu1.17_amd64.deb ...
+Unpacking curl (7.81.0-1ubuntu1.17) over (7.81.0-1ubuntu1.16) ...
+Preparing to unpack .../libcurl4_7.81.0-1ubuntu1.17_amd64.deb ...
+Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.17) over (7.81.0-1ubuntu1.16) ...
+Setting up apt-transport-https (2.4.12) ...
+Setting up libcurl4:amd64 (7.81.0-1ubuntu1.17) ...
+Setting up curl (7.81.0-1ubuntu1.17) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.8) ...
+[34m
+* Installing APT package sources for Datadog
+[0m
+gpg: directory '/root/.gnupg' created
+gpg: /root/.gnupg/trustdb.gpg: trustdb created
+gpg: key E6266D4AC0962C7D: public key "Datadog, Inc. APT key (2023-04-20) (APT key) <package+aptkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: key 0D826EB906462314: public key "Datadog, Inc. APT key (2024-05-15) (APT key) <package+aptkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: key E6266D4AC0962C7D: "Datadog, Inc. APT key (2023-04-20) (APT key) <package+aptkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+gpg: key 32637D44F14F620E: public key "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: key D3A80E30382E94DE: public key "Datadog, Inc <package@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+Ign:1 https://apt.datadoghq.com stable InRelease
+Get:2 https://apt.datadoghq.com stable Release [26.0 kB]
+Get:3 https://apt.datadoghq.com stable Release.gpg [801 B]
+Get:4 https://apt.datadoghq.com stable/7 amd64 Packages [78.1 kB]
+Get:5 https://apt.datadoghq.com stable/7 i386 Packages [1,073 B]
+Get:6 https://apt.datadoghq.com stable/7 all Packages [1,073 B]
+Fetched 107 kB in 10s (10.3 kB/s)
+Reading package lists...
+  [33mInstalling package(s): datadog-agent datadog-signing-keys
+[0m
+tee: /tmp/ddog_install_error_msg: Permission denied
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  datadog-agent datadog-signing-keys
+0 upgraded, 2 newly installed, 0 to remove and 91 not upgraded.
+Need to get 273 MB of archives.
+After this operation, 1,265 MB of additional disk space will be used.
+Get:1 https://apt.datadoghq.com stable/7 amd64 datadog-agent amd64 1:7.55.3-1 [273 MB]
